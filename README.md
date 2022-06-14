@@ -26,3 +26,20 @@ yarn start
 yarn add --dev ts-node nodemon
 yarn start // ファイル変更を感知してts-nodeが自動再実行されるようになる
 ```
+
+# eslint の導入
+
+```
+yarn add --dev eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser
+touch .eslintrc.js
+```
+
+## エラーの回避
+
+```
+Parsing error: "parserOptions.project" has been set for @typescript-eslint/parser.
+The file does not match your project config: .eslintrc.js.
+The file must be included in at least one of the projects provided.
+```
+
+eslintrc.js が import されてないという主旨だが import 不要なので`.eslintignore`で対象外に指定する
