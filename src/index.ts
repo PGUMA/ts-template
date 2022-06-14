@@ -4,4 +4,6 @@ let c = {
   apple: a,
   banana: b,
 };
-let d = c.apple * 4;
+let d = c.apple * 5;
+
+console.log(d);

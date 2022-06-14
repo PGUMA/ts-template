@@ -17,3 +17,12 @@ node モジュールの型
 yarn build
 yarn start
 ```
+
+# 変更の自動監視
+
+[参考](https://typescript-jp.gitbook.io/deep-dive/nodejs)
+
+```
+yarn add --dev ts-node nodemon
+yarn start // ファイル変更を感知してts-nodeが自動再実行されるようになる
+```
